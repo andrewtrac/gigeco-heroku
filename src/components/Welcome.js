@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Welcome.scss";
+import "../styles/Form.scss";
 
 export default function Welcome() {
   return (
