@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "../styles/Form.scss";
+import "../styles/form.scss";
 
 export default function Login() {
   useEffect(() => {
