@@ -27,7 +27,7 @@ export default function Login() {
           <input data-ms-member="email" placeholder="email"/>
           <br></br>
           <br></br>
-          <input data-ms-member="password" placeholder="password"/>
+          <input data-ms-member="password" placeholder="password" type="password"/>
           <br></br>
           <br></br>
           <input type="submit" value="Login" />
