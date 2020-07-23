@@ -4,7 +4,10 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <h1>Home</h1>
+      <h3>Homepage</h3>
+      <p>Gigeco Takeaway Assignment</p>
+      <p>Submitted by Andrew Trac</p>
+      <p>July 23, 2020</p>
     </div>
   );
 }

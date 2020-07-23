@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import { Route, Link, BrowserRouter as Router, Switch} from 'react-router-dom'
+import { Route, Link, BrowserRouter as Router, Switch, NavLink} from 'react-router-dom'
 import App from './App';
 import Login from './components/Login'
 import Registration from './components/Registration'
@@ -11,18 +11,15 @@ import * as serviceWorker from './serviceWorker';
 
 const routing = (
   <Router>
-    <div>
-    <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/login">Login</Link>
-        </li>
-        <li>
-          <Link to="/registration">Registration</Link>
-        </li>
-      </ul>
+    <div className="main">
+    <div className="navbar">
+      <span className="name">Gigeco</span>
+      <div className="links">
+      <NavLink exact to="/" activeClassName="active-link" className="link">Home</NavLink>
+      <NavLink exact to="/login" activeClassName="active-link" className="link">Login</NavLink>
+      <NavLink exact to="/registration" activeClassName="active-link" className="link">Registration</NavLink>
+      </div>
+    </div>
     <Switch>
       <Route exact path="/" component={App} />
       <Route path="/login" component={Login} />
