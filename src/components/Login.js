@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "../styles/form.scss";
+import "../styles/Form.scss";
 
 export default function Login() {
   useEffect(() => {
@@ -24,10 +24,10 @@ export default function Login() {
         <form data-ms-form="login">
           <br></br>
           <br></br>
-          <input data-ms-member="email" placeholder="email" />
+          <input data-ms-member="email" placeholder="email"/>
           <br></br>
           <br></br>
-          <input data-ms-member="password" placeholder="password" />
+          <input data-ms-member="password" placeholder="password"/>
           <br></br>
           <br></br>
           <input type="submit" value="Login" />
